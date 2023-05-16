@@ -1,0 +1,33 @@
+{
+  "name": "polkadot.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "shortDescription": "Polkadot Full Node",
+  "description": "Implementation of a Polkadot node in Rust based on the Substrate framework.",
+  "type": "service",
+  "architectures": ["linux/amd64"],
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",  
+  "categories": ["Blockchain"],
+  "exposable": [
+    {
+      "name": "Polkadot JSON RPC",
+      "description": "JSON RPC endpoint for Polkadot node",
+      "serviceName": "polkadot",
+      "port": 9933
+    },
+    {
+      "name": "Polkadot JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Polkadot node",
+      "serviceName": "polkadot",
+      "port": 9944
+    }
+  ],
+  "upstreamRepo": "paritytech/polkadot",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "links": {
+    "api": "http://polkadot.dappnode:9944",
+    "homepage": "https://polkadot.network/"
+  },
+  "license": "GPL-3.0",
+  "upstreamVersion": "v0.9.42"
+}
+
