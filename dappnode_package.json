@@ -21,13 +21,17 @@
       "port": 9944
     }
   ],
-  "upstreamRepo": "paritytech/polkadot",
-  "upstreamArg": "UPSTREAM_VERSION",
+  "upstream": [
+    {
+      "repo": "paritytech/polkadot",
+      "version": "v0.9.42",
+      "arg": "UPSTREAM_VERSION"
+    }
+  ],
   "links": {
     "api": "http://polkadot.dappnode:9944",
     "homepage": "https://polkadot.network/"
   },
-  "license": "GPL-3.0",
-  "upstreamVersion": "v0.9.42"
+  "license": "GPL-3.0"
 }
 
