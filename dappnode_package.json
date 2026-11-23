@@ -27,6 +27,13 @@
     "api": "http://polkadot.dappnode:9944",
     "homepage": "https://polkadot.network/"
   },
+  "backup": [
+    {
+      "name": "node-key",
+      "path": "/data/chains/polkadot/network/secret_ed25519",
+      "service": "polkadot"
+    }
+  ],
   "license": "GPL-3.0",
   "upstreamVersion": "v0.9.42"
 }
